@@ -73,16 +73,72 @@ def sentiment_analysis_page():
             
 
         with col2:
-                
-                st.write("Ranil Wickramasinghe")
+            st.subheader("Ranil Wickremesinghe")
+            values = [40, 40, 20]  # Example values for Ranil Wickremesinghe
 
+            fig_ranil = go.Figure(data=[go.Pie(labels=labels,
+                                               values=values,
+                                               hole=.3)])
+
+            fig_ranil.update_layout(
+                showlegend=True,
+                height=250,
+                margin={'l': 20, 'r': 60, 't': 0, 'b': 50},
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.1,
+                )
+            )
+            fig_ranil.update_traces(textposition='inside', textinfo='percent')
+
+            st.plotly_chart(fig_ranil, use_container_width=True)
+
+        # Pie chart for Sajith Premadasa
         with col3:
-                
-                st.write("Sajith Premadasa")
+            st.subheader("Sajith Premadasa")
+            values = [35, 45, 20]  # Example values for Sajith Premadasa
 
+            fig_sajith = go.Figure(data=[go.Pie(labels=labels,
+                                                values=values,
+                                                hole=.3)])
+
+            fig_sajith.update_layout(
+                showlegend=True,
+                height=250,
+                margin={'l': 20, 'r': 60, 't': 0, 'b': 50},
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.1,
+                )
+            )
+            fig_sajith.update_traces(textposition='inside', textinfo='percent')
+
+            st.plotly_chart(fig_sajith, use_container_width=True)
+
+        # Pie chart for Namal Rajapaksa
         with col4:
-                
-                st.write("Namal Rajapakshe")
+            st.subheader("Namal Rajapaksha")
+            values = [20, 60, 20]  # Example values for Namal Rajapaksa
+
+            fig_namal = go.Figure(data=[go.Pie(labels=labels,
+                                               values=values,
+                                               hole=.3)])
+
+            fig_namal.update_layout(
+                showlegend=True,
+                height=250,
+                margin={'l': 20, 'r': 60, 't': 0, 'b': 50},
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.1,
+                )
+            )
+            fig_namal.update_traces(textposition='inside', textinfo='percent')
+
+            st.plotly_chart(fig_namal, use_container_width=True)
 
         # Row 2 - Another set of visual data or analysis in horizontal bar chart
         col5, col6 = st.columns(2)
