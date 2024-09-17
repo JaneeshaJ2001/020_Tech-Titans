@@ -53,8 +53,8 @@ def create_chart():
     images = {
         'Sajith Premadasa': create_circle_image(Image.open(image_path1), fixed_size),
         'AK Dissanayake': create_circle_image(Image.open(image_path2), fixed_size),
-        'Ranil Wickremesinghe': create_circle_image(Image.open(image_path3), fixed_size),
-        'SLPP': create_circle_image(Image.open(image_path4), fixed_size)
+        'Ranil Wickremesinghe': create_circle_image(Image.open(image_path4), fixed_size),
+        'SLPP': create_circle_image(Image.open(image_path3), fixed_size)
     }
 
     # Data
