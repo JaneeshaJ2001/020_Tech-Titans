@@ -18,7 +18,7 @@ def electobot_page():
             time.sleep(0.05)
 
 
-    st.title("Manifesto Comparator")
+    st.title("Electobot")
 
     # Initialize chat history
     if "messages" not in st.session_state:
