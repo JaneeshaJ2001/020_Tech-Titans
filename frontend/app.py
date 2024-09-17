@@ -9,21 +9,21 @@ from home import home
 
 def main():
     # Navigation bar
-    st.set_page_config(page_title="SL President'24", layout="wide")
+    st.set_page_config(page_title="SL President'24", page_icon="trophy", layout="wide")
     
 
     with st.sidebar:
         selected = option_menu(
         "SL President\'24",  # Title of the menu
         ["Home", "Win Predictor", "Sentiment Analysis", "ElectoBot", "Manifesto Comparator"],  # Menu items
-        icons=["house", "camera", "clipboard", "book", "book"],  # Icons for each item
+        icons=["house", "trophy", "clipboard-data", "robot", "book"],  # Icons for each item
         menu_icon="app-indicator",  # Icon for the menu header
         default_index=0,  # Default selected item
         styles={
             "container": {"padding": "5!important"},
-            "icon": {"color": "orange", "font-size": "25px"},  # Color and size for the icons
-            "nav-link": {"font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-            "nav-link-selected": {"background-color": "green", "color": "white"},
+            "icon": {"color": "orange", "font-size": "20px"},  # Color and size for the icons
+            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"2px"},
+            "nav-link-selected": {"background-color": "#496780", "color": "white"},
         }
     )    
     
