@@ -8,7 +8,7 @@ from home import home
 
 def main():
     # Navigation bar
-    st.set_page_config(layout="wide")
+    st.set_page_config(page_title="SL President'24", layout="wide")
     
 
     with st.sidebar:

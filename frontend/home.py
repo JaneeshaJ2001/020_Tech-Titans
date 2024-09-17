@@ -104,14 +104,36 @@ def create_chart():
     # Use Streamlit to display the chart
     st.pyplot(fig)
 
+def set_bg_from_local(image_file):
+    bin_str = get_base64(image_file)
+    st.markdown(
+        f"""
+        <style>
+        .stAppViewContainer {{
+            background-image: url("data:image/png;base64,{bin_str}");
+            background-size: cover;
+        }}
+        [data-testid="stHeader"] {{
+        background-color: rgba(0, 0, 0, 0);
+    }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 def home():
     # Set background (if required)
     # set_background("candidates.jpg")
     
-    st.title("Who will win the Presidential Election?")
+    #st.title("Who will win the Presidential Election?")
     
     # Display chart
-    create_chart()
+    #create_chart()
+    set_bg_from_local('imgs/candidates1.png')
+    st.title("Who will be the Next President?")
+    
+
 
 if __name__ == '__main__':
     home()
