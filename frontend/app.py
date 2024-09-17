@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 from sentiment_analysis import sentiment_analysis_page
 from electobot import electobot_page
 from manifesto_comparator import manifesto_comparator_page
+from winPredictor import winPredictor
 from home import home
 
 
@@ -14,8 +15,8 @@ def main():
     with st.sidebar:
         selected = option_menu(
         "SL President\'24",  # Title of the menu
-        ["Home", "Sentiment Analysis", "ElectoBot", "Manifesto Comparator"],  # Menu items
-        icons=["house", "camera", "clipboard", "book"],  # Icons for each item
+        ["Home", "Win Predictor", "Sentiment Analysis", "ElectoBot", "Manifesto Comparator"],  # Menu items
+        icons=["house", "camera", "clipboard", "book", "book"],  # Icons for each item
         menu_icon="app-indicator",  # Icon for the menu header
         default_index=0,  # Default selected item
         styles={
@@ -39,6 +40,9 @@ def main():
         
     elif selected == 'Manifesto Comparator':
         manifesto_comparator_page()
+
+    elif selected == 'Win Predictor':
+        winPredictor()
 
 if __name__ == '__main__':
     main()
