@@ -45,7 +45,7 @@ def create_chart():
     fixed_size = 50  # Example size in pixels
 
     # Load and prepare candidate images
-    image_path1 = './photos/download (1).jpeg'
+    image_path1 = './photos/sajith.jpeg'
     image_path2 = './photos/anura.jpeg'
     image_path3 = './photos/namal.jpeg'
     image_path4 = './photos/ranil.jpeg'
@@ -58,7 +58,7 @@ def create_chart():
 
     # Data
     candidates = ['Namal Rajapakshe', 'Sajith Premadasa', 'Anura Kumara Dissanayake', 'Ranil Wickremesinghe']
-    votes = [7, 38, 39, 15]
+    votes = [7, 37, 41, 15]
     colors = ['purple', 'orange', 'red', 'green']
 
     # Create a horizontal bar chart

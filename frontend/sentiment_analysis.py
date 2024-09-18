@@ -13,7 +13,7 @@ def sentiment_analysis_page():
     
     sub_selected = option_menu(
         None,  # No title for sub-menu
-        ["Analyze Social Media", "Public Opinion Trends", "Polling Details"],  # Sub-menu options
+        ["Analyze Social Media", "Polling Details", "Public Opinion Trends"],  # Sub-menu options
         icons=["info", "bar-chart", "twitter"],  # Sub-menu icons
         menu_icon="cast",  # Sub-menu menu icon
         default_index=0,  # Default selected sub-menu item
@@ -200,7 +200,7 @@ def sentiment_analysis_page():
             data=district,
             columns=['ADM2_PCODE', 'obtainedFinalVotesPercentage'],
             key_on='properties.ADM2_PCODE',
-            fill_color='PuRd',
+            fill_color='GnBu',
             fill_opacity=0.7,
             line_opacity=0.2,
             legend_name='Voting Percentage',
@@ -237,11 +237,11 @@ def sentiment_analysis_page():
                 <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;padding:5px;">
                     <thead>
                         <tr>
-                            <th colspan="2" style="border: 2px solid black; padding: 8px; background-color: white; font-weight: bold;">ALL ISLAND</th>
+                            <th colspan="2" style="border: 2px solid black; padding: 8px; background-color: black; font-weight: bold;">ALL ISLAND</th>
                         </tr>
                         <tr>
-                            <th style="border: 2px solid black; padding: 8px; background-color: #f0f0f0; font-weight: bold;">CANDIDATE'S NAME</th>
-                            <th style="border: 2px solid black; padding: 8px; background-color: #f0f0f0; font-weight: bold;">OBTAINED VOTES PERCENTAGE</th>
+                            <th style="border: 2px solid black; padding: 8px; background-color: #222222; font-weight: bold;">CANDIDATE'S NAME</th>
+                            <th style="border: 2px solid black; padding: 8px; background-color: #222222; font-weight: bold;">OBTAINED VOTES PERCENTAGE</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -262,8 +262,8 @@ def sentiment_analysis_page():
                             <td style="border: 2px solid black; padding: 8px; background-color: #D95355; color: white; text-align: right;">2.02%</td>
                         </tr>
                         <tr>
-                            <td style="border: 2px solid black; padding: 8px; background-color: yellow; font-weight: bold;">P. Ariyenathran</td>
-                            <td style="border: 2px solid black; padding: 8px; background-color: yellow; text-align: right;">1.12%</td>
+                            <td style="border: 2px solid black; padding: 8px; background-color: light-blue; font-weight: bold;">P. Ariyenathran</td>
+                            <td style="border: 2px solid black; padding: 8px; background-color: light-blue; text-align: right;">1.12%</td>
                         </tr>
                         <tr>
                             <td style="border: 2px solid black; padding: 8px; background-color: #800080; color: white; font-weight: bold;">Others</td>

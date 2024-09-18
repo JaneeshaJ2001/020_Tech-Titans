@@ -26,7 +26,7 @@ def set_bg_from_local(image_file):
 
 def home():
     
-    set_bg_from_local('imgs/candidates1.png')
+    set_bg_from_local('imgs/candidates.jpg')
     st.title("Who will be the Next President?")
     
 
